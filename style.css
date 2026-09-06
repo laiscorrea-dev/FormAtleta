@@ -1,0 +1,61 @@
+
+
+/* Define o corpo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Centraliza horizontalmente */
+    align-items: center;       /* Centraliza verticalmente */
+    min-height: 100vh;         /* Ocupa pelo menos toda a altura da tela */
+    margin: 0;
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px 0px 0 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+
+}
+
+/* Container principal */
+.container {
+    text-align: center;        /* Centraliza texto e elementos internos */
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;          /* Limita largura para não ficar exagerado */
+}
+
+/* Logo */
+.container img {
+    display: block;
+    margin: 0 auto 20px auto;  /* Centraliza e dá espaço abaixo */
+    max-width: 150px;
+}
+
+/* Inputs e selects */
+.container input,
+.container select {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Botão de envio */
+.container input[type="submit"] {
+    background-color: #198754; /* Verde Bootstrap */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #145c32; /* Tom mais escuro no hover */
+}
