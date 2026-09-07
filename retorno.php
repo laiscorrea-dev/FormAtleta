@@ -1,4 +1,10 @@
-
+<?php
+$usr = $_POST['usr'];
+$senha = $_POST['senha'];
+$email = $_POST['email'];
+$clube = $_POST['cidade'];
+$sexo = $_POST['sexo'];
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,13 +16,6 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <?php
-$usr = $_POST['usr'];
-$senha = $_POST['senha'];
-$email = $_POST['email'];
-$clube = $_POST['cidade']; // ajustado para corresponder ao index.php
-$sexo = $_POST['sexo'];
-?>
         <div class="container mt-3">
             <img src="logo.png" class="rounded" alt="Logo Atletismo Brasil">
             <h1>Acesso Restrito ao Atleta</h1>
@@ -33,7 +32,7 @@ $sexo = $_POST['sexo'];
             <p><strong>Sexo:</strong> <?php echo $sexo; ?></p>
 
             <!-- Botão para retornar à página inicial -->
-            <a href="index.php" class="btn btn-primary mt-3">Voltar à página inicial</a>
+            <a href="index.html" class="btn btn-primary mt-3">Voltar à página inicial</a>
             <!-- Fim do botão -->
         </div>
     </body>
